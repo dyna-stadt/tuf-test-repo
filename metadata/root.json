@@ -1,0 +1,66 @@
+{
+ "signatures": [
+  {
+   "keyid": "a5594f1ab8ac1b3c942598fe25f41b10eccaedcac009af5a815eed99004f993c",
+   "sig": "3045022045f06881e77c7b8b99af5a8ebb67398fd6c3a3c22a23c0b8ee3c1d631ce14287022100e61e8fd19e6b09f0aa6bb70bd5f4c0f6dcb162ed566c1b5659fcfea75aec9758"
+  }
+ ],
+ "signed": {
+  "_type": "root",
+  "consistent_snapshot": true,
+  "expires": "2026-02-21T10:21:31Z",
+  "keys": {
+   "a5594f1ab8ac1b3c942598fe25f41b10eccaedcac009af5a815eed99004f993c": {
+    "keytype": "ecdsa",
+    "keyval": {
+     "public": "-----BEGIN PUBLIC KEY-----\nMFkwEwYHKoZIzj0CAQYIKoZIzj0DAQcDQgAEUvN6PAjOzTJOfnl6hQh/pY6hWC9f\nUSPrfAlE13dBEizpGrhS2xlZ/xkZYVNEeAEn/wKyOhz+wSsMnF/z3mwyTg==\n-----END PUBLIC KEY-----\n"
+    },
+    "scheme": "ecdsa-sha2-nistp256",
+    "x-tuf-on-ci-keyowner": "@dyna-stadt"
+   },
+   "a71b6f4887b71430ced26f99d2d10aba94476268c8be6126eb422b941f20a583": {
+    "keytype": "sigstore-oidc",
+    "keyval": {
+     "identity": "https://github.com/dyna-stadt/tuf-test-repo/.github/workflows/online-sign.yml@refs/heads/main",
+     "issuer": "https://token.actions.githubusercontent.com"
+    },
+    "scheme": "Fulcio",
+    "x-tuf-on-ci-online-uri": "sigstore:"
+   }
+  },
+  "roles": {
+   "root": {
+    "keyids": [
+     "a5594f1ab8ac1b3c942598fe25f41b10eccaedcac009af5a815eed99004f993c"
+    ],
+    "threshold": 1
+   },
+   "snapshot": {
+    "keyids": [
+     "a71b6f4887b71430ced26f99d2d10aba94476268c8be6126eb422b941f20a583"
+    ],
+    "threshold": 1,
+    "x-tuf-on-ci-expiry-period": 365,
+    "x-tuf-on-ci-signing-period": 60
+   },
+   "targets": {
+    "keyids": [
+     "a5594f1ab8ac1b3c942598fe25f41b10eccaedcac009af5a815eed99004f993c"
+    ],
+    "threshold": 1
+   },
+   "timestamp": {
+    "keyids": [
+     "a71b6f4887b71430ced26f99d2d10aba94476268c8be6126eb422b941f20a583"
+    ],
+    "threshold": 1,
+    "x-tuf-on-ci-expiry-period": 2,
+    "x-tuf-on-ci-signing-period": 1
+   }
+  },
+  "spec_version": "1.0.31",
+  "version": 1,
+  "x-tuf-on-ci-expiry-period": 365,
+  "x-tuf-on-ci-signing-period": 60
+ }
+}
