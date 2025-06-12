@@ -2,15 +2,42 @@
  "signatures": [
   {
    "keyid": "a5594f1ab8ac1b3c942598fe25f41b10eccaedcac009af5a815eed99004f993c",
-   "sig": "3044022076d11fa0225482acfd0014c71880c86a586eb2b7fbdb3cee5f5785db2048402f02200399d0ff6271e2e72a206c01bbfe73ba4d7ed53f295e77fe26411fd1c93a8f9c"
+   "sig": "3046022100dfb50b4dff3c700c43ff838c6e041ed0944e103d7bf3671e50c02d0e31c45310022100d6262db3983c0011032a2911ed966e0ea759ee7314a2cbade0e6e354fb08d956"
   }
  ],
  "signed": {
   "_type": "targets",
-  "expires": "2026-02-21T10:21:31Z",
+  "expires": "2026-06-11T07:02:59Z",
   "spec_version": "1.0.31",
-  "targets": {},
-  "version": 1,
+  "targets": {
+   "fulcio-intermediate.pem": {
+    "custom": {
+     "sigstore": {
+      "status": "Active",
+      "uri": "",
+      "usage": "Fulcio"
+     }
+    },
+    "hashes": {
+     "sha256": "f41028bcc62f4b9bdb531daa2d3ee9163aa9f98da3d678f8447a8d3c97626e9b"
+    },
+    "length": 850
+   },
+   "fulcio-root.pem": {
+    "custom": {
+     "sigstore": {
+      "status": "Active",
+      "uri": "",
+      "usage": "Fulcio"
+     }
+    },
+    "hashes": {
+     "sha256": "cb9500c9057c57df69dbb81fe1decc7d926de6a8c22c8eb51e60a94b53c02d06"
+    },
+    "length": 940
+   }
+  },
+  "version": 2,
   "x-tuf-on-ci-expiry-period": 365,
   "x-tuf-on-ci-signing-period": 60
  }
