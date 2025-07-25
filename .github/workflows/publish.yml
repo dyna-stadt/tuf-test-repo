@@ -21,7 +21,10 @@ jobs:
         with:
           gh_pages: true
           ref: ${{ inputs.ref }}
-
+      - id: echo
+        run: |
+          ls -la
+          
   deploy-to-pages:
     permissions:
       pages: write
