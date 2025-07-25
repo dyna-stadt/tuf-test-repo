@@ -23,7 +23,7 @@ jobs:
           ref: ${{ inputs.ref }}
       - id: echo
         run: |
-          ls -la metadata
+          ls -la build
           
   deploy-to-pages:
     permissions:
